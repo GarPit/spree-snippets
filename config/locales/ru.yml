@@ -4,8 +4,13 @@ ru:
       spree/snippet:
         slug: Код
         content: Содержимое
-
-  spree:       
+    models:
+      spree/snippet:
+        one: Сниппет
+        few: Сниппета
+        many: Сниппетов
+        other: Сниппеты
+  spree:
     snippets: Сниппеты
     snippets_desc: 'Управление сниппетами из админки через WYM editor'
     new_snippet: Новый сниппет
