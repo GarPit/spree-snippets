@@ -13,9 +13,6 @@ module Spree::SnippetHelper
       raise "Unable to handle snippet '#{snippet}'"
     end
 
-    if @snippet.nil?
-raise "Snippet '#{snippet}' not found"
-    end
     return nil unless @snippet
 
     template = ERB.new File.read(File.expand_path(snippet_wrapper_absolute_path))
